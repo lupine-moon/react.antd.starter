@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import * as React from 'react';
 
-import Loader from '@components/structural/Loader';
+import Loader from '@components/ui/Loader';
 
 import './style.less';
 

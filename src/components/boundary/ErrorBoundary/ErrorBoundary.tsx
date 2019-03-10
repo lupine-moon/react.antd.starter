@@ -21,7 +21,7 @@ interface State {
 @observer
 class ErrorBoundary extends React.Component<ErrorBoundaryProps, State> {
 	public state: State = {
-		hasError: true
+		hasError: false
 	};
 
 	constructor(props: ErrorBoundaryProps, context: any) {

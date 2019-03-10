@@ -2,14 +2,14 @@ import { Icon, Spin } from 'antd';
 import classnames from 'classnames';
 import * as React from 'react';
 
-import Loader from '@components/structural/Loader';
+import Loader from '@components/ui/Loader';
 
 const antSpinnerIcon = (
 	<Icon
 		type="loading"
 		style={{
 			fontSize: 32,
-			color: '#30b8b8'
+			color: '#dbbc4c'
 		}}
 		spin={true}
 	/>

@@ -33,7 +33,11 @@ export class Main extends React.Component {
 
 	public render() {
 		return (
-			<Provider store={this.store} routerStore={this.store.routerStore}>
+			<Provider
+				store={this.store}
+				flagStore={this.store.flagStore}
+				routerStore={this.store.routerStore}
+			>
 				<ErrorBoundary>{this.renderRoute()}</ErrorBoundary>
 			</Provider>
 		);
