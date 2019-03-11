@@ -45,12 +45,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Docker
 
-This project includes a multi-stage Dockerfile. 
+This project includes a multi-stage Dockerfile.
 
-To build the image: 
+To build the image:
 
 ```
-docker build . --tag react-starter-client:1.0
+docker build . --tag react-starter:1.0
 ```
 
 Alternatively, build and run:
