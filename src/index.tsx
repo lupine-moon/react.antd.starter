@@ -21,7 +21,7 @@ export class Main extends React.Component {
 		super(props, context);
 		const { router } = this.store.routerStore;
 		router.start();
-		router.navigate(RouteNames.HOME);
+		this.store.routerStore.navigate({ name: RouteNames.HOME });
 	}
 
 	public renderRoute() {
