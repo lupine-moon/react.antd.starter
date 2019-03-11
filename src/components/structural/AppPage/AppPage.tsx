@@ -28,7 +28,7 @@ export interface AppPageProps {
 
 const loaderStyle = {
 	minHeight: '100%',
-	overflow: 'auto'
+	overflow: 'hidden'
 };
 
 const AppPage = (props: AppPageProps) => {

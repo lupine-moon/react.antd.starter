@@ -38,7 +38,7 @@ class Home extends React.Component<AllProps> {
 
 		return (
 			<AppPage useLoader={true} spinning={false} antSpinner={true} className={'Home__Body'}>
-				<section className="Home__Container">
+				<section className="Home__Card">
 					<section className="Home__Content">
 						<section className="Logo__Container">
 							<Logo />

@@ -39,7 +39,11 @@ class Calendar extends React.Component<CalendarProps, State> {
 				antSpinner={true}
 				className={'Calendar__Body'}
 			>
-				<AntCalendar />
+				<section className="Calendar__Card">
+					<section className="Content__Wrapper">
+						<AntCalendar />
+					</section>
+				</section>
 			</AppPage>
 		);
 	}

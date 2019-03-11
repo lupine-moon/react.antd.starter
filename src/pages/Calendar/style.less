@@ -1,21 +1,29 @@
 @import '~@themes/app-theme.less';
 
 .Calendar__Body {
+	display: flex;
+	flex: 1;
 	position: relative;
-	background-color: @color-white;
-	margin: 16px;
-	padding: 10px;
+	background-color: @page-background;
 
-	:global {
-		.ant-card {
-			border-radius: 0;
-			margin-bottom: 24px;
-			&:hover {
-				box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
-			}
-		}
-		.ant-card-body {
-			overflow-x: hidden;
+	.Calendar__Card {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: calc(100vh - 64px - 80px);
+		text-align: center;
+		padding: 0px;
+		margin: 10px;
+		background-color: @color-white;
+		font-weight: 400;
+
+		.Content__Wrapper {
+			height: calc(100vh - 64px);
+			width: 100%;
+			overflow: auto;
 		}
 	}
 }

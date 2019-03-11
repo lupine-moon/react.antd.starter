@@ -1,3 +1,4 @@
+import { observer } from 'mobx-react';
 import * as React from 'react';
 
 import AppPage from '@components/structural/AppPage';
@@ -12,14 +13,11 @@ interface State {
 	loading: boolean;
 }
 
+@observer
 class Search extends React.Component<SearchProps, State> {
 	public state: State = {
 		loading: true
 	};
-
-	constructor(props: SearchProps, context?: any) {
-		super(props, context);
-	}
 
 	public componentDidMount() {
 		setTimeout(() => {
@@ -37,7 +35,11 @@ class Search extends React.Component<SearchProps, State> {
 				antSpinner={true}
 				className={'Search__Body'}
 			>
-				<p>Search Page</p>
+				<section className="Search__Card">
+					<section className="Content__Wrapper">
+						<h1 className="placeholder">Search</h1>
+					</section>
+				</section>
 			</AppPage>
 		);
 	}
